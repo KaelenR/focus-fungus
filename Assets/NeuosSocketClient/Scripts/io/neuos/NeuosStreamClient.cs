@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 using System.Net;
 using UnityEngine.Events;
 using System.Collections.Generic;
@@ -61,7 +62,10 @@ namespace io.neuos
         private byte[] m_recBuffer = new byte[1024];
         private byte[] m_keepAlive = new byte[1];
         private bool m_blockingState;
-                
+
+
+        private JObject prevObject;
+
         /// <summary>
         /// Establishes a socket connection to the server
         /// API Key must be set prior or authentication will fail
@@ -139,56 +143,78 @@ namespace io.neuos
                 {
                     // get the next message
                     var data = GetMessage();
-                    // parse the json into a JObject so we can pull properties out easily
-                    var response = JObject.Parse(data);
-                    // get the command that arrived
-                    var commandValue = (string)response.Property(StreamObjectKeys.COMMAND)?.Value;
-                    // example of pulling the time stamp off the command
-                    var timestamp = (long)response.Property(StreamObjectKeys.TIME_STAMP)?.Value;
-                    
-                    switch (commandValue)
+                    JObject response = null;
+                    try
                     {
-                        case StreamCommandValues.VALUE_CHANGED:
-                            {
-                                var key = (string)response.Property(StreamObjectKeys.KEY)?.Value;
-                                var type = response.Property(StreamObjectKeys.VALUE)?.Value.Type;
-                                if (type != JTokenType.Array)
-                                {
-                                    var value = (float)response.Property(StreamObjectKeys.VALUE)?.Value;
-                                    OnValueChanged?.Invoke(key, value);
-                                }
-                                else 
-                                {
-                                    var value = response.Property(StreamObjectKeys.VALUE)?.Value;
-                                    List<float> floats = new List<float>();
-                                    foreach (var child in value.Children())
-                                    {
-                                        floats.Add((float)child);
-                                    }
-                                    OnArrayValueChanged?.Invoke(key, floats.ToArray());
-                                }
-                                break;
-                            }
-                        case StreamCommandValues.QA:
-                            {
-                                var passed = (bool)response.Property(StreamObjectKeys.PASSED)?.Value;
-                                var failure = (int)response.Property(StreamObjectKeys.TYPE)?.Value;
-                                OnQAEvent?.Invoke(passed, failure);
-                                break;
-                            }
-                        case StreamCommandValues.SESSION_COMPLETE:
-                            {
-                                Disconnect();
-                                break;
-                            }
-                        case StreamCommandValues.CONNECTION:
-                            {
-                                var previous =  (int)response.Property(StreamObjectKeys.PREVIOUS)?.Value;
-                                var current = (int)response.Property(StreamObjectKeys.CURRENT)?.Value;
-                                OnHeadbandConnectionChanged?.Invoke(previous, current);
-                                break;
-                            }
+                        // parse the json into a JObject so we can pull properties out easily
+                        response = JObject.Parse(data);
+                        // get the command that arrived
                     }
+                    catch(JsonReaderException e)
+                    {
+                        Debug.Log("Error: " + e);
+                    }
+
+                    if (response == null)
+                    {
+
+                        response = prevObject;
+
+                    }
+                    else
+                    {
+                        prevObject = response;
+                    }
+
+                        var commandValue = (string)response.Property(StreamObjectKeys.COMMAND)?.Value;
+                        // example of pulling the time stamp off the command
+                        var timestamp = (long)response.Property(StreamObjectKeys.TIME_STAMP)?.Value;
+
+
+
+                        switch (commandValue)
+                        {
+                            case StreamCommandValues.VALUE_CHANGED:
+                                {
+                                    var key = (string)response.Property(StreamObjectKeys.KEY)?.Value;
+                                    var type = response.Property(StreamObjectKeys.VALUE)?.Value.Type;
+                                    if (type != JTokenType.Array)
+                                    {
+                                        var value = (float)response.Property(StreamObjectKeys.VALUE)?.Value;
+                                        OnValueChanged?.Invoke(key, value);
+                                    }
+                                    else
+                                    {
+                                        var value = response.Property(StreamObjectKeys.VALUE)?.Value;
+                                        List<float> floats = new List<float>();
+                                        foreach (var child in value.Children())
+                                        {
+                                            floats.Add((float)child);
+                                        }
+                                        OnArrayValueChanged?.Invoke(key, floats.ToArray());
+                                    }
+                                    break;
+                                }
+                            case StreamCommandValues.QA:
+                                {
+                                    var passed = (bool)response.Property(StreamObjectKeys.PASSED)?.Value;
+                                    var failure = (int)response.Property(StreamObjectKeys.TYPE)?.Value;
+                                    OnQAEvent?.Invoke(passed, failure);
+                                    break;
+                                }
+                            case StreamCommandValues.SESSION_COMPLETE:
+                                {
+                                    Disconnect();
+                                    break;
+                                }
+                            case StreamCommandValues.CONNECTION:
+                                {
+                                    var previous = (int)response.Property(StreamObjectKeys.PREVIOUS)?.Value;
+                                    var current = (int)response.Property(StreamObjectKeys.CURRENT)?.Value;
+                                    OnHeadbandConnectionChanged?.Invoke(previous, current);
+                                    break;
+                                }
+                        }
                 }
                 else // no data is avalable atm , so we verify our socket is still connected
                 {
@@ -281,12 +307,24 @@ namespace io.neuos
         {
             // first get the 2 bytes to see the next message's size
             m_Socket.Receive(m_CommandLength);
+
+            byte[] backupLength = m_CommandLength;
             // the server works as BigEndian. if we are running on little endian, we have to reverse the byte order
             if (BitConverter.IsLittleEndian)
+            {
+                Debug.Log("Reversed array");
                 Array.Reverse(m_CommandLength);
+            }
+            
             // convert to a unsigned 16 bit int to find the length of the command
             int rcvLen = BitConverter.ToUInt16(m_CommandLength, 0);
             // read that length in byte into the buffer
+            if(rcvLen > 1024)
+            {
+                rcvLen = 1023;
+            }
+            Debug.Log("Size: " + rcvLen);
+
             m_Socket.Receive(m_recBuffer, rcvLen, SocketFlags.None);
             // convert to a string
             string rcv = Encoding.UTF8.GetString(m_recBuffer, 0, rcvLen);
