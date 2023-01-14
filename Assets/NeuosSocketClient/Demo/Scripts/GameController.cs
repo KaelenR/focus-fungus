@@ -30,7 +30,14 @@ public class GameController : MonoBehaviour
     private string ApiKey;
     [SerializeField]
     private NeuosStreamClient neuosStreamClient;
-    
+
+    [Serializable]
+    public class OnSenseChanged : UnityEvent<string, string> { }
+
+    [SerializeField]
+    private OnSenseChanged OnKeyChanged;
+
+
     
     StringBuilder builder = new StringBuilder();
     StringBuilder arrayBuilder = new StringBuilder();
@@ -146,9 +153,7 @@ public class GameController : MonoBehaviour
         {
             // add each key value pair as a line to the string builder
             builder.AppendLine($"{kvp.Key} : {kvp.Value}");
-            //call event here and send up key + value
             OnKeyChanged.Invoke(kvp.Key, kvp.Value);
-
         }
         // update the UI text value with the value of the new string builder
         valuesTextField.text = builder.ToString();
