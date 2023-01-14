@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Assets/Scenes/VRDEMO.unity
-    guid: 59dd4c5fc84798f4ebb47ff7186d7df9
+    path: Assets/_Assets/Scenes/HandSplitDemo.unity
+    guid: 552470213cd9d6744ba09af1891bc5d5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dd0eac67b13997f44b793deb46f682e7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d5b4dfac4b8d25b42b43d89834b18534, type: 2}
