@@ -17,14 +17,14 @@ using UnityEngine.Events;
 public class GameController : MonoBehaviour
 {
     [SerializeField]
-    private InputField ipField;
-    [SerializeField]
-    private InputField portField;
-    [SerializeField]
+    private string ipField;
+
+    private const string portField = "38641";
+  
     private Text valuesTextField;
-    [SerializeField]
+    
     private Button connectButton;
-    [SerializeField]
+    
     private Button disconnectButton;
     [SerializeField]
     private string ApiKey;
@@ -42,6 +42,19 @@ public class GameController : MonoBehaviour
     StringBuilder builder = new StringBuilder();
     StringBuilder arrayBuilder = new StringBuilder();
     private Dictionary<string, string> fields = new Dictionary<string, string>();
+
+
+    void Start()
+    {
+        ConnectToServer();
+    }
+
+
+
+
+
+
+
     /// <summary>
     /// Method to call that will connect to the Neuos Stream server
     /// </summary>
@@ -50,7 +63,7 @@ public class GameController : MonoBehaviour
         if (!neuosStreamClient.IsConnected)
         {
             neuosStreamClient.ApiKey = ApiKey;
-            neuosStreamClient.ConnectToServer(ipField.text, int.Parse(portField.text));
+            neuosStreamClient.ConnectToServer(ipField, int.Parse(portField));
         }
     }
     /// <summary>
@@ -68,8 +81,8 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void OnServerConnected()
     {
-        connectButton.gameObject.SetActive(false);
-        disconnectButton.gameObject.SetActive(true);
+        //connectButton.gameObject.SetActive(false);
+        //disconnectButton.gameObject.SetActive(true);
 
     }
     /// <summary>
@@ -77,8 +90,8 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void OnServerDisconnected()
     {
-        connectButton.gameObject.SetActive(true);
-        disconnectButton.gameObject.SetActive(false);
+        //connectButton.gameObject.SetActive(true);
+        //disconnectButton.gameObject.SetActive(false);
     }
     /// <summary>
     /// Callback for when the Neuos Stream server sends an updated value
@@ -156,7 +169,7 @@ public class GameController : MonoBehaviour
             OnKeyChanged.Invoke(kvp.Key, kvp.Value);
         }
         // update the UI text value with the value of the new string builder
-        valuesTextField.text = builder.ToString();
+        //valuesTextField.text = builder.ToString();
     }
 
     
