@@ -5,7 +5,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NeuosData : MonoBehaviour
+public class NeuosDreamCatcher : MonoBehaviour
 {
 
     private float enjoyment;
@@ -22,13 +22,6 @@ public class NeuosData : MonoBehaviour
 
     public ValueChangedEvent zoneChanged;
 
-    
-
-    [SerializeField]
-    private int pollingTime;
-
-    [SerializeField]
-    private float pollingRate;
 
     // Start is called before the first frame update
     void Start()

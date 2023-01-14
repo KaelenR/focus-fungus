@@ -30,15 +30,8 @@ public class GameController : MonoBehaviour
     private string ApiKey;
     [SerializeField]
     private NeuosStreamClient neuosStreamClient;
-
-
-    [Serializable]
-    public class valueChangedEvent : UnityEvent<string, string> { }
-
-
-    [SerializeField]
-    private valueChangedEvent OnKeyChanged;
-
+    
+    
     StringBuilder builder = new StringBuilder();
     StringBuilder arrayBuilder = new StringBuilder();
     private Dictionary<string, string> fields = new Dictionary<string, string>();
