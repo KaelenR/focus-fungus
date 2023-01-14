@@ -1,8 +1,10 @@
 ﻿using io.neuos;
 using System.Collections.Generic;
 using System.Text;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 /// <summary>
 /// Game controller behaviour
 /// This class connectes between the "game" and the neuos client
@@ -28,8 +30,15 @@ public class GameController : MonoBehaviour
     private string ApiKey;
     [SerializeField]
     private NeuosStreamClient neuosStreamClient;
-    
-    
+
+
+    [Serializable]
+    public class valueChangedEvent : UnityEvent<string, string> { }
+
+
+    [SerializeField]
+    private valueChangedEvent OnKeyChanged;
+
     StringBuilder builder = new StringBuilder();
     StringBuilder arrayBuilder = new StringBuilder();
     private Dictionary<string, string> fields = new Dictionary<string, string>();
@@ -144,6 +153,9 @@ public class GameController : MonoBehaviour
         {
             // add each key value pair as a line to the string builder
             builder.AppendLine($"{kvp.Key} : {kvp.Value}");
+            //call event here and send up key + value
+            OnKeyChanged.Invoke(kvp.Key, kvp.Value);
+
         }
         // update the UI text value with the value of the new string builder
         valuesTextField.text = builder.ToString();
