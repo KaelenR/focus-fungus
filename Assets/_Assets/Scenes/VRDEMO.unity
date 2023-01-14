@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -222,6 +222,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!33 &488198049 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 158853307072891014, guid: e5b814dc28d871e4c80e02d33fb67a7d, type: 3}
+  m_PrefabInstance: {fileID: 1574252263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &687286792 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: 8206665828895666450, guid: e5b814dc28d871e4c80e02d33fb67a7d, type: 3}
+  m_PrefabInstance: {fileID: 1574252263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &981476155
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555725d48e9051a4bb6b8d45178c2fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectionSurfaceType: 0
+  projectionSurfaceType: 1
   overlayType: 2
   compositionDepth: 0
   hidden: 0
@@ -458,7 +468,11 @@ MonoBehaviour:
   colorMapEditorBrightness: 0
   colorMapEditorPosterize: 0
   colorMapEditorSaturation: 0
-  serializedSurfaceGeometry: []
+  serializedSurfaceGeometry:
+  - meshFilter: {fileID: 687286792}
+    updateTransform: 0
+  - meshFilter: {fileID: 488198049}
+    updateTransform: 0
   textureOpacity_: 1
   edgeRenderingEnabled_: 0
   edgeColor_: {r: 1, g: 1, b: 1, a: 1}
@@ -537,7 +551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4390830741509562398, guid: e5b814dc28d871e4c80e02d33fb67a7d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.471002
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 4390830741509562398, guid: e5b814dc28d871e4c80e02d33fb67a7d, type: 3}
       propertyPath: m_LocalPosition.y
