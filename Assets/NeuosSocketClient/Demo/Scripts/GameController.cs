@@ -44,16 +44,6 @@ public class GameController : MonoBehaviour
     private Dictionary<string, string> fields = new Dictionary<string, string>();
 
 
-    void Start()
-    {
-        ConnectToServer();
-    }
-
-
-
-
-
-
 
     /// <summary>
     /// Method to call that will connect to the Neuos Stream server

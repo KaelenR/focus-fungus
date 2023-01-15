@@ -12,8 +12,13 @@ public class MicroUSBAdapter : MonoBehaviour
     [SerializeField]
     private GameController playerB;
 
-    bool pressedA = false;
 
+    public GameObject setA;
+    public GameObject setB;
+
+
+    bool pressedA = false;
+    bool pressedB = false;
 
     // Update is called once per frame
     void Update()
@@ -39,6 +44,26 @@ public class MicroUSBAdapter : MonoBehaviour
 
         }
 
+        if (!pressedB)
+        {
+
+            if (OVRInput.Get(OVRInput.Button.Two))
+            {
+                Connect();
+                pressedB = true;
+
+            }
+        }
+        else
+        {
+            if (!OVRInput.Get(OVRInput.Button.Two))
+            {
+                pressedB = false;
+            }
+
+
+        }
+
     }
 
 
@@ -51,7 +76,16 @@ public class MicroUSBAdapter : MonoBehaviour
 
         playerB.ipField = temp;
 
-
+        if (setA.activeSelf)
+        {
+            setA.SetActive(false);
+            setB.SetActive(true);
+        }
+        else
+        {
+            setA.SetActive(true);
+            setB.SetActive(false);
+        }
 
     }
 
