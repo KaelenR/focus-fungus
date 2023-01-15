@@ -994,13 +994,17 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3381263010320282065, guid: d1cab7bf0d4d87f49a70736bdd9989d0, type: 3}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[1]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: 8ab99ae09a8c6f141821a4cb1e99b2b1, type: 3}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[2]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: 9082de144ed3481468136c7bb248229b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
 --- !u!114 &63137664 stripped
@@ -5102,13 +5106,17 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3381263010320282065, guid: d1cab7bf0d4d87f49a70736bdd9989d0, type: 3}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[1]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: 8ab99ae09a8c6f141821a4cb1e99b2b1, type: 3}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[2]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: 9082de144ed3481468136c7bb248229b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
 --- !u!114 &621537595 stripped
@@ -8520,13 +8528,17 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3381263010320282065, guid: c547a918602d3e94dbb42417d1c337af, type: 3}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[1]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: a5bbe96e44833f64dbff58bdd72f7eb5, type: 3}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[2]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: 4ed4e222ab3d55c4c9e16969d6a07ee2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
 --- !u!114 &1049273388 stripped
@@ -14526,13 +14538,17 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3381263010320282065, guid: c547a918602d3e94dbb42417d1c337af, type: 3}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[1]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: a5bbe96e44833f64dbff58bdd72f7eb5, type: 3}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.data[2]
       value: 
-      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+      objectReference: {fileID: 3381263010320282065, guid: 4ed4e222ab3d55c4c9e16969d6a07ee2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
 --- !u!114 &1759147873 stripped
