@@ -14,14 +14,14 @@ public class ParticleRemote : MonoBehaviour
 
     public void SetEmission(float value)
     {
-        var e = pSystem.emission;
-        e.rateOverTimeMultiplier = baseEmission * emissionMultiplier;
+        ParticleSystem.EmissionModule e = pSystem.emission;
+        e.rateOverTimeMultiplier = baseEmission * Mathf.Lerp(0.1f, 1, value) *emissionMultiplier;
     }
 
     public void SetSpread(float value)
     {
-        var s = pSystem.shape;
-        s.radius = baseSpread * spreadMultiplier;
+        ParticleSystem.ShapeModule s = pSystem.shape;
+        s.radius = baseSpread * Mathf.Lerp(0.1f, 1, value) * spreadMultiplier;
 
     }
 }
