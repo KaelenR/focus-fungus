@@ -14,12 +14,14 @@ public class ScaleOnStart : MonoBehaviour
 
     float _currentTime;
 
+    public AudioSource aSource;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.localScale = Vector3.one * minScale;
-        maxScale += Random.Range(0, scaleVariability);
+        maxScale += Random.Range(0, maxScale * scaleVariability);
+        aSource.Play();
     }
 
     // Update is called once per frame
@@ -29,10 +31,13 @@ public class ScaleOnStart : MonoBehaviour
         if(_currentTime > endTime)
         {
             transform.localScale = Vector3.one * maxScale;
+            Destroy(aSource);
             Destroy(this);
         }
 
         transform.localScale = Vector3.one * (maxScale - minScale) * (_currentTime / endTime);
+        aSource.pitch = transform.localScale.x;
+
 
 
     }

@@ -941,6 +941,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2048068010}
     m_Modifications:
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: maxEmission
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: baseEmission
+      value: 0.035
+      objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
       value: Head MushroomParticlesEnjoy
@@ -988,6 +996,14 @@ PrefabInstance:
     - target: {fileID: 7721485829150263250, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.size
@@ -5053,6 +5069,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 128157376}
     m_Modifications:
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: maxEmission
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: baseEmission
+      value: 0.035
+      objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
       value: Hand MushroomParticlesFocus
@@ -5100,6 +5124,14 @@ PrefabInstance:
     - target: {fileID: 7721485829150263250, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.size
@@ -8475,6 +8507,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 128157376}
     m_Modifications:
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: maxEmission
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: baseEmission
+      value: 0.025
+      objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
       value: Hand MushroomParticlesEnjoy
@@ -8522,6 +8562,14 @@ PrefabInstance:
     - target: {fileID: 7721485829150263250, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.size
@@ -8817,7 +8865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1089865283
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11576,9 +11624,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 88d9d4dcb3cc38749b933f12578e847a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -14485,6 +14533,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2048068010}
     m_Modifications:
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: maxEmission
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: baseEmission
+      value: 0.025
+      objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
       value: Head MushroomParticlesFocus
@@ -14532,6 +14588,14 @@ PrefabInstance:
     - target: {fileID: 7721485829150263250, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.size
