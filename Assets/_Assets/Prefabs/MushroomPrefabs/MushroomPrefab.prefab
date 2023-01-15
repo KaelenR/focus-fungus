@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7278046537973579472}
   - component: {fileID: 6277634755713744048}
+  - component: {fileID: -7463778278652228596}
   m_Layer: 0
   m_Name: MushroomPrefab
   m_TagString: Untagged
@@ -48,3 +49,16 @@ MonoBehaviour:
   maxScale: 1
   scaleVariability: 2
   endTime: 0.15
+--- !u!114 &-7463778278652228596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205667119322612330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdf0bd460e71d04f9b8ed88b08bb93f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTimer: 10
