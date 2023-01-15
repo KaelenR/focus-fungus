@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ParticleRemote : MonoBehaviour
 {
-    public float baseEmission = 2f;
-    public float emissionMultiplier = 1f;
+    public float baseEmission = 0.1f;
+    //public float emissionMultiplier = 1f;
 
-    public float baseSpread = .27f;
-    public float spreadMultiplier = 1f;
+   // public float baseSpread = .27f;
+   // public float spreadMultiplier = 1f;
 
     public ParticleSystem pSystem;
 
@@ -21,15 +21,15 @@ public class ParticleRemote : MonoBehaviour
     public void SetEmission(float value)
     {
         ParticleSystem.EmissionModule e = pSystem.emission;
-        float adjVal = value == -1 ? 0.05f : Mathf.Lerp(0.01f, 1, value);
-        e.rateOverTimeMultiplier = baseEmission * adjVal * emissionMultiplier;
+        //float adjVal = value == -1 ? 0.1f : Mathf.Lerp(0.1f, 1, value);
+        e.rateOverTimeMultiplier = value == -1 ? baseEmission : Mathf.Lerp(baseEmission, 1, value);
     }
 
-    public void SetSpread(float value)
+    /*public void SetSpread(float value)
     {
         ParticleSystem.ShapeModule s = pSystem.shape;
         float adjVal = value == -1 ? 0.05f : Mathf.Lerp(0.01f, 1, value);
         s.radius = baseSpread * adjVal * spreadMultiplier;
 
-    }
+    }*/
 }
