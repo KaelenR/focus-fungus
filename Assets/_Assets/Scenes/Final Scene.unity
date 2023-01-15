@@ -1091,11 +1091,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.6
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.06
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -1146,8 +1146,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.06
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
@@ -7282,11 +7286,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.6
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.06
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -7337,8 +7341,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.06
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
@@ -11534,11 +11542,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.4
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.04
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -11589,8 +11597,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.04
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
@@ -18896,11 +18908,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.6
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.04
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -18951,8 +18963,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.04
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar

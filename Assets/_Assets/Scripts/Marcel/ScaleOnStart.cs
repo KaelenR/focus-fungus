@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScaleOnStart : MonoBehaviour
 {
 
-    public float minScale = 0f;
+    public float minScale = 0.01f;
     public float maxScale = 1f;
 
     public float scaleVariability = 0.2f;
