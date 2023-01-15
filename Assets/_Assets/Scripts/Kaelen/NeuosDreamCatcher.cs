@@ -15,7 +15,6 @@ public class NeuosDreamCatcher : MonoBehaviour
 
     
 
-    public Transform shroom;
     [Serializable]
     public class ValueChangedEvent : UnityEvent<float> { }
 
@@ -47,7 +46,7 @@ public class NeuosDreamCatcher : MonoBehaviour
 
             focus = (float)Convert.ToDouble(val);
 
-            shroom.position = new Vector3(0, focus/10, 0);
+            
             if (focus > 0)
             {
                 focus = focus / 100;
