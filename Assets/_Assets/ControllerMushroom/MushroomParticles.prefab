@@ -4825,6 +4825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489c8e9514f97754a9d9f888adbce4eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnGO: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+  spawnGOs:
+  - {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
   part: {fileID: 7721485829150263251}
   jiggleAmount: 14
