@@ -1091,11 +1091,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.35
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.035
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -1147,7 +1147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.035
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
@@ -7282,11 +7282,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.35
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.035
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -7338,7 +7338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.035
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
@@ -11534,11 +11534,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.25
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.025
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -11590,11 +11590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.025
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 0.25
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.size
@@ -18896,11 +18896,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: maxEmission
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 151676080, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: baseEmission
-      value: 0.025
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
@@ -18952,11 +18952,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.025
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263251, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 0.25
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: spawnGOs.Array.size
