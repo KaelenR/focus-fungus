@@ -12,11 +12,11 @@ public class ParticleRemote : MonoBehaviour
 
     public ParticleSystem pSystem;
 
-    public void Update()
+    /*public void Update()
     {
         SetEmission(.5f);
         SetSpread(.5f);
-    }
+    }*/
 
     public void SetEmission(float value)
     {
