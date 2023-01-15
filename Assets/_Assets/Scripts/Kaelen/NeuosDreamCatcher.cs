@@ -13,6 +13,8 @@ public class NeuosDreamCatcher : MonoBehaviour
     private float focus;
 
 
+    
+
     [Serializable]
     public class ValueChangedEvent : UnityEvent<float> { }
 
@@ -35,12 +37,17 @@ public class NeuosDreamCatcher : MonoBehaviour
     public void printData(string key, string val)
     {
 
+        
+
         Debug.Log(key + " : " + val);
 
         if(key == "focus")
         {
+
             focus = (float)Convert.ToDouble(val);
-            if(focus > 0)
+
+            
+            if (focus > 0)
             {
                 focus = focus / 100;
             }
