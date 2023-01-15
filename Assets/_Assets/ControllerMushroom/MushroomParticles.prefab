@@ -922,7 +922,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4843,7 +4843,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseEmission: 0.1
-  emissionMultiplier: 3
-  baseSpread: 0.27
-  spreadMultiplier: 3
   pSystem: {fileID: 7721485829150263251}

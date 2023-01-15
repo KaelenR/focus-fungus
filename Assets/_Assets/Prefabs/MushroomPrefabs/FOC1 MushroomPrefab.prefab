@@ -66,7 +66,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1205667119322612330, guid: 50d20e90fe7553043a4e2c4ca0ce1703, type: 3}
       propertyPath: m_Name
-      value: MushroomPrefab Variant
+      value: FOC1 MushroomPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 7278046537973579472, guid: 50d20e90fe7553043a4e2c4ca0ce1703, type: 3}
       propertyPath: m_RootOrder
@@ -114,24 +114,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50d20e90fe7553043a4e2c4ca0ce1703, type: 3}
---- !u!1 &3381263010320282065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1205667119322612330, guid: 50d20e90fe7553043a4e2c4ca0ce1703, type: 3}
-  m_PrefabInstance: {fileID: 4492282424563676091}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2478692339230269770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3381263010320282065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfdf0bd460e71d04f9b8ed88b08bb93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxTimer: 10
 --- !u!4 &6581759976035061099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7278046537973579472, guid: 50d20e90fe7553043a4e2c4ca0ce1703, type: 3}
