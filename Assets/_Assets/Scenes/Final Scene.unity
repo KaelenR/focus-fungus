@@ -8307,7 +8307,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
-      value: MushroomParticles
+      value: Hand MushroomParticles
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263250, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_RootOrder
@@ -8353,6 +8353,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[1]
+      value: 
+      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[2]
+      value: 
+      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
 --- !u!114 &1049273388 stripped
@@ -11858,6 +11870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MushroomL
       objectReference: {fileID: 0}
+    - target: {fileID: 231142871355521601, guid: 34a1e3ec58b287747b2567d5d63a3aa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4427470931680685077, guid: 34a1e3ec58b287747b2567d5d63a3aa0, type: 3}
     - {fileID: 4427470931934873580, guid: 34a1e3ec58b287747b2567d5d63a3aa0, type: 3}
@@ -14297,7 +14313,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7721485829150263249, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_Name
-      value: MushroomParticles
+      value: Head MushroomParticles
       objectReference: {fileID: 0}
     - target: {fileID: 7721485829150263250, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
       propertyPath: m_RootOrder
@@ -14343,6 +14359,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[1]
+      value: 
+      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
+    - target: {fileID: 7721485829150263261, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
+      propertyPath: spawnGOs.Array.data[2]
+      value: 
+      objectReference: {fileID: 2181914663863288247, guid: b0e6d67f4cdf25e43ac136fda484ff47, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1fe9c3d7dbff647a80bd0d0c4a7a00, type: 3}
 --- !u!114 &1759147873 stripped
