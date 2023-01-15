@@ -16,8 +16,8 @@ using UnityEngine.Events;
 /// </summary>
 public class GameController : MonoBehaviour
 {
-    [SerializeField]
-    private string ipField;
+
+    public string ipField;
 
     private const string portField = "38641";
   
