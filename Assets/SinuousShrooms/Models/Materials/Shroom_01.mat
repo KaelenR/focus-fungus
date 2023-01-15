@@ -93,10 +93,10 @@ Material:
     - _Underglow: 0.173
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor1: {r: 1, g: 0.08823532, b: 0, a: 1}
-    - _BaseColor2: {r: 1, g: 0.8068966, b: 0, a: 0.178}
+    - _BaseColor1: {r: 0.5058824, g: 0.63529414, b: 0.58431375, a: 1}
+    - _BaseColor2: {r: 0.25490198, g: 0.34901962, b: 0.3529412, a: 1}
     - _BottomColor: {r: 0.9338235, g: 0.9116618, b: 0.8720264, a: 1}
-    - _CapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CapColor: {r: 0.23137257, g: 0.31764707, b: 0.3254902, a: 1}
     - _Color: {r: 0.7647059, g: 0.26442847, b: 0.21929064, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TopColor: {r: 1, g: 0.8852941, b: 0.71323526, a: 1}
