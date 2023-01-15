@@ -18797,6 +18797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MushroomR
       objectReference: {fileID: 0}
+    - target: {fileID: 231142871355521601, guid: 34a1e3ec58b287747b2567d5d63a3aa0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4427470931680685076, guid: 34a1e3ec58b287747b2567d5d63a3aa0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
