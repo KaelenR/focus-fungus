@@ -2,19 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script kills this gameObject maxTimer seconds after start
+/// </summary>
 public class Decay : MonoBehaviour
 {
 
     public float maxTimer = 10.0f;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         maxTimer -= Time.deltaTime;

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script is unused. Was intended to line up the playspaces of both players based off the pos of their controller.
+/// Marcel isnt the best as vector math so the hand being a child of the object we are posioning is confusing.
+/// Turns out the arrow on the floor works well enough. Just face the same way in the same space and press the oculus button for alignment instead
+/// </summary>
 public class Centerer : MonoBehaviour
 {
 

@@ -13,6 +13,9 @@ public class ParticleCollision : MonoBehaviour
     void Start()
     {
         part = GetComponent<ParticleSystem>();
+        if (!part)
+            Debug.Log("no particle system on " + gameObject.name);
+
         collisionEvents = new List<ParticleCollisionEvent>();
     }
 

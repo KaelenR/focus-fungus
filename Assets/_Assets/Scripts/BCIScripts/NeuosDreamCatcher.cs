@@ -5,15 +5,14 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// This Script takes in the data from neuros and exposes some normalized floats as events
+/// </summary>
 public class NeuosDreamCatcher : MonoBehaviour
 {
-
     private float enjoyment;
     private float zone;
     private float focus;
-
-
-    
 
     [Serializable]
     public class ValueChangedEvent : UnityEvent<float> { }
@@ -24,21 +23,15 @@ public class NeuosDreamCatcher : MonoBehaviour
 
     public ValueChangedEvent zoneChanged;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         focus = -1;
         enjoyment = -1;
         zone = -1;
-
     }
 
-    public void printData(string key, string val)
+    public void PrintData(string key, string val)
     {
-
-        
-
         Debug.Log(key + " : " + val);
 
         if(key == "focus")
@@ -46,7 +39,6 @@ public class NeuosDreamCatcher : MonoBehaviour
 
             focus = (float)Convert.ToDouble(val);
 
-            
             if (focus > 0)
             {
                 focus = focus / 100;
@@ -76,11 +68,4 @@ public class NeuosDreamCatcher : MonoBehaviour
         Debug.Log(focus);
     }
 
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

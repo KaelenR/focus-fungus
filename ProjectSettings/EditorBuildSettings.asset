@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/_Assets/Scenes/HandSplitDemo.unity
+    path: Assets/_Assets/Scenes/TestScenes/HandSplitDemo.unity
     guid: 552470213cd9d6744ba09af1891bc5d5
   - enabled: 0
-    path: Assets/_Assets/Scenes/Pia Copy.unity
+    path: Assets/_Assets/Scenes/TestScenes/Pia Copy.unity
     guid: 010bde9fa5ffaf645b2f7ca116aee9b6
   - enabled: 0
-    path: Assets/_Assets/Scenes/3DSite.unity
+    path: Assets/_Assets/Scenes/TestScenes/3DSite.unity
     guid: 59a5aaafe6ac68a46b456732312c9118
   - enabled: 1
     path: Assets/_Assets/Scenes/Final Scene.unity
